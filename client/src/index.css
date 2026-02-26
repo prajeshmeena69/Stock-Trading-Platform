@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800;900&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-primary: #05050f;
+  --bg-secondary: #0a0a18;
+  --bg-card: #0d0d1a;
+  --bg-hover: #12121f;
+  --accent-cyan: #00d4ff;
+  --accent-cyan-dim: rgba(0,212,255,0.12);
+  --accent-green: #00ff88;
+  --accent-red: #ff4466;
+  --text-primary: #ffffff;
+  --text-secondary: #8888aa;
+  --text-muted: #44445a;
+  --border: rgba(0,212,255,0.08);
+  --border-bright: rgba(0,212,255,0.2);
+  --glow-cyan: 0 0 30px rgba(0,212,255,0.2);
+}
+
+body {
+  font-family: 'Syne', sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: rgba(0,212,255,0.2); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,212,255,0.4); }
+
+/* Page background grid */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0,212,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,255,0.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* All pages sit above grid */
+#root { position: relative; z-index: 1; }
