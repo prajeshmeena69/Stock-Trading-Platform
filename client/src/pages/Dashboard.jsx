@@ -365,9 +365,9 @@ const s = {
 
   qtySection: { marginBottom: "1.5rem" },
   qtyLabel: { fontSize: "0.68rem", color: "#8888aa", textTransform: "uppercase", letterSpacing: "0.08em", fontWeight: 700, display: "block", marginBottom: "0.625rem" },
-  qtyRow: { display: "flex", alignItems: "center", gap: "0.75rem" },
-  qtyBtn: { width: 38, height: 38, background: "rgba(0,212,255,0.08)", border: "1px solid rgba(0,212,255,0.15)", borderRadius: 9, color: "#00d4ff", fontSize: "1.2rem", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontFamily: "'Syne', sans-serif", transition: "all 0.2s" },
-  qtyInput: { flex: 1, textAlign: "center", padding: "0.625rem", background: "rgba(0,0,0,0.4)", border: "1px solid rgba(0,212,255,0.12)", borderRadius: 9, color: "#fff", fontSize: "1rem", fontWeight: 800, outline: "none", fontFamily: "'Syne', sans-serif" },
+  qtyRow: { display: "flex", alignItems: "center", gap: "0.75rem", width: "100%" },
+  qtyBtn: { minWidth: 44, height: 44, background: "rgba(0,212,255,0.08)", border: "1px solid rgba(0,212,255,0.15)", borderRadius: 9, color: "#00d4ff", fontSize: "1.4rem", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontFamily: "'Syne', sans-serif", transition: "all 0.2s", flexShrink: 0 },
+  qtyInput: { flex: 1, minWidth: 0, textAlign: "center", padding: "0.625rem", background: "rgba(0,0,0,0.4)", border: "1px solid rgba(0,212,255,0.12)", borderRadius: 9, color: "#fff", fontSize: "1rem", fontWeight: 800, outline: "none", fontFamily: "'Syne', sans-serif" },
 
   modalActions: { display: "flex", gap: "0.75rem" },
   cancelBtn: { flex: 1, padding: "0.75rem", background: "transparent", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 9, color: "#8888aa", cursor: "pointer", fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: "0.875rem" },
